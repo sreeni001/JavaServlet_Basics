@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>com.sreeni.servletproj1</display-name>
+  <servlet>
+  	<servlet-name> add
+  	</servlet-name>
+  <servlet-class>com.sreeni.servletproj1.AddServlet</servlet-class>
+  	<init-param>
+  		<param-name>configVal</param-name>
+  		<param-value>100</param-value>
+  	</init-param>
+  
+  
+  </servlet>
+  <servlet>
+  	<servlet-name> square
+  	</servlet-name>
+  <servlet-class>com.sreeni.servletproj1.SquareServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>square</servlet-name>
+  	<url-pattern>/square</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>add</servlet-name>
+  	<url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  
+  <context-param> <!--Example for ServletContext-->
+  	<param-name>contextVal</param-name>
+  	<param-value>52</param-value>
+  </context-param>
+  
+  
+  
+  
+</web-app>
